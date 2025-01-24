@@ -1,27 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Finance - Mutual Investment</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <nav>
-            <div class="logo">
-                <img src="logo.svg" alt="Finance Logo">
-                <span>Finance</span>
-            </div>
             <div class="social-links">
-                <a href="#"><img src="twitter.svg" alt="Twitter"></a>
-                <a href="#"><img src="facebook.svg" alt="Facebook"></a>
-                <a href="#"><img src="instagram.svg" alt="Instagram"></a>
+                <a href="#">
+                    <img src="assets/twitter-1.svg" alt="Twitter" class="social-icon light">
+                    <img src="assets/twitter-2.svg" alt="Twitter" class="social-icon dark">
+                </a>
+                <a href="#">
+                    <img src="assets/facebook-1.svg" alt="Facebook" class="social-icon light">
+                    <img src="assets/facebook-2.svg" alt="Facebook" class="social-icon dark">
+                </a>
+                <a href="#">
+                    <img src="assets/medium-1.svg" alt="Medium" class="social-icon light">
+                    <img src="assets/medium-2.svg" alt="Medium" class="social-icon dark">
+                </a>
+            </div>
+            <div class="logo">
+                <img src="assets/logo-1.svg" alt="Finance Logo" class="logo-icon light">
+                <img src="assets/logo-2.svg" alt="Finance Logo" class="logo-icon dark">
+                <span></span>
             </div>
             <button class="menu-btn">
                 <span></span>
                 <span></span>
                 <span></span>
+            </button>
+            <button class="theme-toggle" onclick="toggleTheme()">
+                <img src="assets/menu-icon-1.svg" alt="Menu Icon" class="theme-toggle-icon light">
+                <img src="assets/menu-icon-2.svg" alt="Menu Icon" class="theme-toggle-icon dark">
             </button>
         </nav>
 
@@ -32,9 +47,11 @@
                 <button class="learn-more">Learn more</button>
             </div>
             <div class="hero-image">
-                <img src="investment-illustration.svg" alt="Investment Illustration">
+                <img src="assets/Revenue-bro 1.png" alt="Investment Illustration">
             </div>
         </main>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html> 
